@@ -5,14 +5,14 @@ Index.html
 
   This is the backbone of the user experience. There are two key components:
   A. Header Files:
-  Links are made between the css stylesheet (app.css) and the javascript file (app.zlr) that detail the interaction between the user and the webpage.
+  Links are made between the css stylesheet (app.css) and the javascript file (app.js) that detail the interaction between the user and the webpage.
 
   B. Body:
   In the body of the html file there are different containers
     1. Score panel that is at the top of the page, it shows the user the move count, timer, star rating and restart button.
     2. The popup class is the panel that is displayed once the user completes the game. It will give them the time it took,
         move count, star rating and gives them a chance to restart the game. Using the restart button sends the user back to the original webpage and it is refreshed.
-  The app.zlr file will add the deck and shuffled cards to the designated container in HTML through it's function.
+  The app.js file will add the deck and shuffled cards to the designated container in HTML through it's function.
 
 App.css
 
@@ -22,7 +22,7 @@ App.css
         3. The popup when the user completes the game
         4. The score panel at the top of the webpage with the users performance rating
 
-App.zlr
+App.js
 
   This serves as the interaction with the html page. It consists of functions that set the parameters, like the following:
 
@@ -37,7 +37,7 @@ App.zlr
         8. event function runs the game based on the clicks of the users
     There are also loops that run based on the conditions of the game
         1. Star ratings are based the number of moves by the user. 20 and under will give 3 stars, 21-27 2       stars, 28 and over will be 1 stars
-        2. When the game is completed, cardDiplayCount and deckOfCards.length are the same. Once these conditions are met the popup is displayed. 
+        2. When the game is completed, cardDiplayCount and deckOfCards.length are the same. Once these conditions are met the popup is displayed.
 
 
 Dependencies
