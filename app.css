@@ -1,0 +1,158 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    padding-top: 20px;
+}
+/* Background stying, background image linked from the web */
+.primary-background {
+  background-image: url("http://images.athleo.net/backgrounds/Blue2.jpg");
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-header {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+}
+div, h2, p, span {
+   font-family: 'Open Sans', sans-serif;
+   line-height: 1.5
+}
+/*
+ * Styles for the deck of cards
+ */
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+.deck .card {
+    transform: rotateY(0deg);
+    height: 125px;
+    width: 125px;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+
+
+    transition: transform .5s linear 0s;*/
+
+}
+.deck .card:hover {
+    background-color: #EEE;
+    cursor: pointer;
+
+}
+.deck .card.open {
+    font-size: 33px;
+    transform: rotateY(180deg);
+    background: #02b3e4;
+    display: flex;
+    cursor: default;
+    align-items: center;
+    transition: transform .5s linear 0s;
+    pointer-events: none;
+}
+.deck .card.show {
+    font-size: 33px;
+
+}
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+}
+
+/*
+ * Styles for the Pop up once the game is completed
+ */
+.popup {
+    display: none;
+    top : 0;
+    right : 0;
+    bottom : 0;
+    left : 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+}
+.popup-content {
+    max-width: 360px;
+    padding : 40px;
+    margin: 5em auto;
+    border-radius: 10px;
+    background-color: white;
+
+}
+.popup-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+}
+.popup-star-display-element .stars li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    color: gold;
+}
+.popup-message-replay {
+    text-align: center;
+    cursor: pointer;
+}
+
+/*
+ * Styles for the Score Panel on the mainpage
+ */
+.score-panel {
+    background-color: white;
+    text-align: center;
+    width: 500px;
+    margin-bottom: 10px;
+}
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    list-style: none;
+    color: gold;
+}
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+
+
+
+
+}
