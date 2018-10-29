@@ -5,7 +5,7 @@ Index.html
 
   This is the backbone of the user experience. There are two key components:
   A. Header Files:
-  Links are made between the css stylesheet (app.css) and the javascript file (app.js) that detail the interaction between the user and the webpage.
+  Links are made between the css stylesheet (app.css) and the javascript file (app.zlr) that detail the interaction between the user and the webpage.
 
   B. Body:
   In the body of the html file there are different containers
